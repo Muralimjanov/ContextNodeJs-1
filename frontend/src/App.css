@@ -1,0 +1,55 @@
+.auth-page {
+    text-align: center;
+    max-width : 600px;
+    margin    : 0 auto;
+    margin-top: 150px;
+}
+
+.btn-reg {
+    margin-left: 25px;
+}
+
+.todos {
+    margin-top: 50px;
+    overflow-y: auto;
+    height    : 300px;
+}
+
+.todos-item {
+    padding    : 10px 15px;
+    display    : flex;
+    align-items: center;
+    cursor     : pointer;
+    border-left: 2px solid #2196f3;
+    position   : relative;
+}
+
+.todos-buttons {
+    margin-left: auto;
+    display    : flex;
+}
+
+.todos-buttons i {
+    margin : 0 10px;
+    z-index: 1;
+}
+
+.todos-buttons i:hover {
+    transform : scale(1.3);
+    transition: .2s;
+}
+
+.completed::after {
+    position  : absolute;
+    content   : "";
+    left      : 25px;
+    top       : 50%;
+    width     : 600px;
+    height    : 2px;
+    background: #2196f3;
+}
+
+.important {
+    font-weight: 500;
+    color      : #ff9800;
+}
